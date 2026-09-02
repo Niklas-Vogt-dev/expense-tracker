@@ -1,0 +1,58 @@
+﻿<Window x:Class="expense_tracker.Windows.WelcomeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Willkommen"
+        Width="450"
+        Height="360"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="{StaticResource BackgroundBrush}"
+        Foreground="{StaticResource PrimaryTextBrush}">
+
+    <Grid Margin="45">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel VerticalAlignment="Center">
+
+            <TextBlock Text="Willkommen! 👋"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       Foreground="{StaticResource PrimaryTextBrush}"
+                       Margin="0,0,0,12"/>
+
+            <TextBlock Text="Schön, dass du da bist."
+                       FontSize="15"
+                       Foreground="{StaticResource SecondaryTextBrush}"
+                       Margin="0,0,0,4"/>
+
+            <TextBlock Text="Wie dürfen wir dich nennen?"
+                       FontSize="15"
+                       Foreground="{StaticResource SecondaryTextBrush}"
+                       Margin="0,0,0,24"/>
+
+            <TextBlock Text="Name"
+                       Style="{StaticResource LabelStyle}"
+                       Margin="0,0,0,7"/>
+
+            <TextBox x:Name="NameTextBox"
+                     Height="42"
+                     VerticalContentAlignment="Center"
+                     MaxLength="50"/>
+
+        </StackPanel>
+
+        <Button Grid.Row="1"
+                Content="Weiter"
+                Width="110"
+                Height="40"
+                HorizontalAlignment="Right"
+                Style="{StaticResource PrimaryButton}"
+                Click="Continue_Click"/>
+
+    </Grid>
+
+</Window>

@@ -1,0 +1,51 @@
+# Visual Studio
+.vs/
+*.user
+*.rsuser
+*.suo
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Generated files
+GeneratedFiles/
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
+# Build output
+Debug/
+Release/
+x64/
+x86/
+*.exe
+*.dll
+*.pdb
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local database
+*.db
+*.db-shm
+*.db-wal
