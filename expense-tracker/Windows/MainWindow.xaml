@@ -259,7 +259,8 @@
                                      ItemsSource="{Binding TransactionsView}"
                                      Background="Transparent"
                                      BorderThickness="0"
-                                     HorizontalContentAlignment="Stretch">
+                                     HorizontalContentAlignment="Stretch"
+                                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
 
                                 <ListBox.Resources>
 
@@ -283,7 +284,7 @@
 
                                                     <ColumnDefinition Width="110"/>
                                                     <ColumnDefinition Width="130"/>
-                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*" MinWidth="0"/>
                                                     <ColumnDefinition Width="100"/>
 
                                                 </Grid.ColumnDefinitions>
